@@ -188,7 +188,7 @@ function App() {
 
 
   return (
-<div className="w-full max-h-full flex flex-col items-center justify-start bg-custom-purple py-5 scrollbar-custom">
+<div className="w-full min-h-screen flex flex-col items-center justify-start bg-custom-purple py-5 overflow-auto scrollbar-custom">
 
   <h1 className="mt-5 p-2 text-4xl font-serif font-bold text-center  text-custom-orange ">Grading Calculator</h1>
   <div className="bg-custom-brown p-8 rounded-lg shadow-lg w-full max-w-lg mt-4">
