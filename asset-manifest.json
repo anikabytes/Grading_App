@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Grading_App/static/css/main.5560280e.css",
+    "main.js": "/Grading_App/static/js/main.0f22ca94.js",
+    "static/js/453.861af5f9.chunk.js": "/Grading_App/static/js/453.861af5f9.chunk.js",
+    "index.html": "/Grading_App/index.html",
+    "main.5560280e.css.map": "/Grading_App/static/css/main.5560280e.css.map",
+    "main.0f22ca94.js.map": "/Grading_App/static/js/main.0f22ca94.js.map",
+    "453.861af5f9.chunk.js.map": "/Grading_App/static/js/453.861af5f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5560280e.css",
+    "static/js/main.0f22ca94.js"
+  ]
+}
