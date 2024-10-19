@@ -344,13 +344,17 @@ function App() {
 
             <button
               onClick={handleReset}
-              className="mt-4 w-full bg-custom-beige hover:bg-orange-100 text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="mt-4 w-full bg-custom-beige hover:bg-orange-100 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Reset
             </button>
           </div>
         )}
       </div>
+      <p className="justify-center mt-10 font-mono font-semibold text-custom-beige">
+     © October, 2024 || by <a href="https://github.com/anikabtes" target="_blank" className="text-custom-orange hover:underline">anikabtes</a>
+</p>
+
     </div>
   );
 }
