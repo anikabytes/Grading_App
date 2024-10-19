@@ -188,9 +188,11 @@ function App() {
 
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <div className="bg-slate-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
-        <h1 className="text-4xl font-bold text-center mb-8 text-emerald-300">Grading Calculator</h1>
+<div className="w-full max-h-full flex flex-col items-center justify-start bg-custom-purple py-5 scrollbar-custom">
+
+  <h1 className="mt-5 p-2 text-4xl font-serif font-bold text-center  text-custom-orange ">Grading Calculator</h1>
+  <div className="bg-custom-brown p-8 rounded-lg shadow-lg w-full max-w-lg mt-4">
+        
 
         {errorMessage && (
           <div className="bg-red-300 text-red-900 p-3 rounded-md mb-4">
@@ -201,8 +203,8 @@ function App() {
 
 
         {results.length > 0 && copies > 0 && inputStage === 3 && (
-          <div className="mt-5 p-4 bg-emerald-200  opacity-90  rounded-md shadow-sm">
-            <h2 className="text-lg font-bold text-gray-700">Latest Calculation</h2>
+          <div className="mt-5 mb-5 p-4 bg-custom-beige  opacity-90  rounded-md shadow-sm">
+            <h2 className="text-lg font-bold text-custom-orange">Latest Calculation</h2>
             <p><strong>Serial Number:</strong> {results[results.length - 1].serial}</p>
             <p><strong>Remaining Marks:</strong> {results[results.length - 1].num}</p>
             <p><strong>Percentage:</strong> {results[results.length - 1].percent}%</p>
@@ -213,22 +215,22 @@ function App() {
         {inputStage === 0 && (
           <>
             <div className="mb-4">
-              <label className="block text-emerald-400 font-semibold mb-2">Select Subject</label>
+              <label className="block font-mono text-custom-beige font-semibold mb-2">Select Subject</label>
               <select
                 value={subject}
                 onChange={handleSubjectChange}
-                className="w-full mt-2 p-3 bg-slate-700 text-emerald-200 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-200"
+                className="w-full mt-2 p-3  font-mono font-semibold bg-custom-beige  text-custom-purple border rounded-md focus:outline-none focus:ring-2 focus:ring-custom-beige"
               >
                 <option value="Chemistry">Chemistry</option>
                 <option value="Physics">Physics</option>
               </select>
             </div>
             <div className="mb-4">
-              <label className="block text-emerald-400 font-semibold mb-2">Select Level</label>
+              <label className="block font-mono text-custom-beige font-semibold mb-2">Select Level</label>
               <select
                 value={level}
                 onChange={handleLevelChange}
-                className="w-full mt-2 p-3 bg-slate-700 text-emerald-200 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-200"
+                className="w-full mt-2 p-3  font-mono font-semibold bg-custom-beige  text-custom-purple border rounded-md focus:outline-none focus:ring-2 focus:ring-custom-beige"
               >
                 <option value="O'Level">O'Level</option>
                 <option value="A'Level">A'Level</option>
@@ -236,7 +238,7 @@ function App() {
             </div>
             <button
               onClick={handleNextInput}
-              className="w-full mt-4 bg-emerald-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="w-full mt-4 bg-custom-orange hover:bg-orange-400 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Next
             </button>
@@ -245,17 +247,17 @@ function App() {
 
         {inputStage === 1 && (
           <div className="mb-4">
-            <label className="block text-emerald-400 font-semibold mb-2">Number of Copies</label>
+            <label className="block text-custom-beige font-mono font-semibold mb-2">Number of Copies</label>
             <input
               type="number"
               value={copies}
               onChange={(e) => setCopies(e.target.value)}
-              className="w-full mt-2 p-3 bg-slate-700 text-emerald-200 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-200"
+              className="w-full mt-2 p-3 bg-custom-beige text-custom-purple font-mono font-bold border  rounded-md focus:outline-none focus:ring-2 focus:ring-custom-beige"
               placeholder="Enter number of copies"
             />
             <button
               onClick={handleNextInput}
-              className="w-full mt-4 bg-emerald-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="w-full mt-4 bg-custom-orange hover:bg-orange-400 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Next
             </button>
@@ -264,17 +266,17 @@ function App() {
 
         {inputStage === 2 && (
           <div className="mb-4">
-            <label className="block text-emerald-400 font-semibold mb-2">Total Marks</label>
+            <label className="block text-custom-beige font-mono font-semibold mb-2">Total Marks</label>
             <input
               type="number"
               value={total}
               onChange={(e) => setTotal(e.target.value)}
-              className="w-full mt-2 p-3 bg-slate-700 text-emerald-200 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-200"
+              className="w-full mt-2 p-3 bg-custom-beige text-custom-purple font-mono font-bold border  rounded-md focus:outline-none focus:ring-2 focus:ring-custom-beige"
               placeholder="Enter total marks"
             />
             <button
               onClick={handleNextInput}
-              className="w-full mt-4 bg-emerald-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="w-full mt-4 bg-custom-orange hover:bg-orange-400 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Next
             </button>
@@ -284,17 +286,17 @@ function App() {
         {/* Stage 3: Marks Lost */}
         {inputStage === 3 && copies > 0 && (
           <div className="mb-4">
-            <label className="block text-emerald-400 font-semibold mb-2">Marks Lost</label>
+            <label className="block text-custom-beige font-mono font-semibold mb-2">Marks Lost</label>
             <input
               type="number"
               value={marksLost}
               onChange={(e) => setMarksLost(e.target.value)}
-              className="w-full mt-2 p-3 bg-slate-700 text-emerald-200 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-200"
+              className="w-full mt-2 p-3 bg-custom-beige text-custom-purple font-mono font-bold border  rounded-md focus:outline-none focus:ring-2 focus:ring-custom-beige"
               placeholder="Enter marks lost"
             />
             <button
               onClick={handleCalculate}
-              className="w-full mt-4 bg-emerald-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="w-full mt-4 bg-custom-orange hover:bg-orange-400 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Calculate
             </button>
@@ -304,45 +306,45 @@ function App() {
 
         {calculationDone && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-emerald-300 mb-4">Results</h2>
-            <table className="min-w-full border border-emerald-300">
+            <h2 className="text-2xl  text-custom-orange font-mono font-bold mb-4">Results</h2>
+            <table className="min-w-full border border-custom-beige font-mono font-bold ">
               <thead>
                 <tr>
-                  <th className="text-emerald-300 border border-emerald-300 px-4 py-2">No.</th>
-                  <th className="text-emerald-300 border border-emerald-300 px-4 py-2">Marks</th>
-                  <th className="text-emerald-300 border border-emerald-300 px-4 py-2">Percentage</th>
-                  <th className="text-emerald-300 border border-emerald-300 px-4 py-2">Grade</th>
+                  <th className="text-custom-beige border border-custom-beige px-4 py-2">No.</th>
+                  <th className="text-custom-beige border border-custom-beige px-4 py-2">Marks</th>
+                  <th className="text-custom-beige border border-custom-beige px-4 py-2">Percentage</th>
+                  <th className="text-custom-beige border border-custom-beige px-4 py-2">Grade</th>
                 </tr>
               </thead>
               <tbody>
                 {results.map(result => (
                   <tr key={result.serial}>
-                    <td className="text-center text-emerald-300 border border-emerald-300 px-4 py-2">{result.serial}</td>
-                    <td className="text-center text-emerald-300 border border-emerald-300 px-4 py-2">{result.num}</td>
-                    <td className="text-center text-emerald-300 border border-emerald-300 px-4 py-2">{result.percent}%</td>
-                    <td className="text-center text-emerald-300 border border-emerald-300 px-4 py-2">{result.grade}</td>
+                    <td className="text-center text-custom-beige border border-custom-beige  px-4 py-2">{result.serial}</td>
+                    <td className="text-center text-custom-beige border border-custom-beige  px-4 py-2">{result.num}</td>
+                    <td className="text-center text-custom-beige border border-custom-beige  px-4 py-2">{result.percent}%</td>
+                    <td className="text-center text-custom-beige border border-custom-beige  px-4 py-2">{result.grade}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
 
             <div className="mt-4">
-              <h3 className="text-lg font-semibold text-emerald-300">Statistics</h3>
-              <p className="text-emerald-200">Average Marks: {stats?.average}</p>
-              <p className="text-emerald-200">Highest Marks: {stats?.highest}</p>
-              <p className="text-emerald-200">Lowest Marks: {stats?.lowest}</p>
+              <h3 className="text-lg font-semibold text-custom-orange font-mono mb-2">Statistics</h3>
+              <p className="text-custom-beige font-mono">Average Marks: <b className="text-orange-500">{stats?.average}</b></p>
+              <p className="text-custom-beige font-mono">Highest Marks: <b className="text-orange-500">{stats?.highest}</b></p>
+              <p className="text-custom-beige font-mono">Lowest Marks: <b className="text-orange-500">{stats?.lowest}</b></p>
             </div>
 
             <button
               onClick={downloadPDF}
-              className="mt-4 w-full bg-emerald-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="mt-4 w-full bg-custom-orange hover:bg-orange-400 font-bold font-mono text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Download Gradesheet
             </button>
 
             <button
               onClick={handleReset}
-              className="mt-4 w-full bg-red-300 text-black py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
+              className="mt-4 w-full bg-custom-beige hover:bg-orange-100 text-custom-purple py-2 rounded-md hover:shadow-lg transition-shadow duration-300"
             >
               Reset
             </button>

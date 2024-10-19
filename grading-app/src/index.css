@@ -12,3 +12,24 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
     -moz-appearance: textfield; /* For Firefox */
 }
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar-custom{
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #32012F; /* Background of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #E2DFD0; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color:  #E2DFD0 #3B3030; /* thumb color, track color */
+  }
+  
