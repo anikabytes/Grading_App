@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Grading_App/static/css/main.b1f6c856.css",
-    "main.js": "/Grading_App/static/js/main.78e2a0a7.js",
+    "main.css": "/Grading_App/static/css/main.fdfeb85f.css",
+    "main.js": "/Grading_App/static/js/main.da29b8bf.js",
     "static/js/239.b7e40701.chunk.js": "/Grading_App/static/js/239.b7e40701.chunk.js",
     "static/js/213.1acd373d.chunk.js": "/Grading_App/static/js/213.1acd373d.chunk.js",
     "static/js/732.8ee57f64.chunk.js": "/Grading_App/static/js/732.8ee57f64.chunk.js",
     "static/js/453.861af5f9.chunk.js": "/Grading_App/static/js/453.861af5f9.chunk.js",
     "index.html": "/Grading_App/index.html",
-    "main.b1f6c856.css.map": "/Grading_App/static/css/main.b1f6c856.css.map",
-    "main.78e2a0a7.js.map": "/Grading_App/static/js/main.78e2a0a7.js.map",
+    "main.fdfeb85f.css.map": "/Grading_App/static/css/main.fdfeb85f.css.map",
+    "main.da29b8bf.js.map": "/Grading_App/static/js/main.da29b8bf.js.map",
     "239.b7e40701.chunk.js.map": "/Grading_App/static/js/239.b7e40701.chunk.js.map",
     "213.1acd373d.chunk.js.map": "/Grading_App/static/js/213.1acd373d.chunk.js.map",
     "732.8ee57f64.chunk.js.map": "/Grading_App/static/js/732.8ee57f64.chunk.js.map",
     "453.861af5f9.chunk.js.map": "/Grading_App/static/js/453.861af5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f6c856.css",
-    "static/js/main.78e2a0a7.js"
+    "static/css/main.fdfeb85f.css",
+    "static/js/main.da29b8bf.js"
   ]
 }
